@@ -1,0 +1,139 @@
+<!doctype html>
+<html class="no-js" lang="ja">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>Stand Alone</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <!-- Place favicon.ico in the root directory -->
+        <link rel="stylesheet" href="css/normalize.css">
+
+        <!-- スタイルシート -->
+
+        <!-- サードパーティ javascript -->
+
+        <!-- メインページのテンプレート -->
+        <template id="main-page">
+          <header id="pal-header">
+            <button class="pal-dom-header-title">
+              keeP-A-Log
+            </button>
+            <div class="pal-dom-header-blank">
+            </div>
+            <button aria-label="エグジット" class="pal-dom-header-logout">
+              <svg class="icon icon-exit">
+                <use href="#icon-exit"></use>
+              </svg>
+            </button>
+            <button aria-label="エンター" class="pal-dom-header-login">
+              <svg class="icon icon-enter">
+                <use href="#icon-enter"></use>
+              </svg>
+            </button>
+            <!-- メニューの内容 -->
+          </header>
+
+        </template>
+
+    </head>
+    <body>
+        <!--[if lt IE 8]>
+            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+
+        <!-- Add your site or application content here -->
+        <!-- <p>Hello world! This is HTML5 Boilerplate.</p> -->
+
+        <!-- <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script> -->
+        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.12.0.min.js"><\/script>')</script>
+        <script src="js/plugins.js"></script>
+        <script src="js/main.js"></script>
+
+        <!-- 自作のjavascript -->
+
+        <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+        <script>
+            (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
+            function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
+            e=o.createElement(i);r=o.getElementsByTagName(i)[0];
+            e.src='https://www.google-analytics.com/analytics.js';
+            r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
+            ga('create','UA-XXXXX-X','auto');ga('send','pageview');
+        </script>
+
+        <svg style="display: none;">
+          <symbol id="navicon" viewBox="0 0 20 20">
+            <path d="m0-0v4h20v-4h-20zm0 8v4h20v-4h-20zm0 8v4h20v-4h-20z" fill="currentColor" />
+          </symbol>
+          <symbol id="icon-menu" viewBox="0 0 48 48">
+            <title>menu</title>
+            <path d="M3 9h42v9h-42zM3 21h42v9h-42zM3 33h42v9h-42z" fill="currentColor" />
+          </symbol>
+          <symbol id="icon-user-plus" viewBox="0 0 48 48">
+            <title>user-plus</title>
+            <path d="M18 34.5c0-7.089 4.494-13.148 10.783-15.478 0.763-1.713 1.217-3.617 1.217-5.522 0-7.456 0-13.5-9-13.5s-9 6.044-9 13.5c0 4.643 2.695 9.286 6 11.148v2.474c-10.177 0.832-18 5.832-18 11.878h18.624c-0.406-1.431-0.624-2.941-0.624-4.5z"></path>
+            <path d="M34.5 21c-7.456 0-13.5 6.044-13.5 13.5s6.044 13.5 13.5 13.5c7.456 0 13.5-6.044 13.5-13.5s-6.044-13.5-13.5-13.5zM42 36h-6v6h-3v-6h-6v-3h6v-6h3v6h6v3z"></path>
+          </symbol>
+          <symbol id="icon-enter" viewBox="0 0 48 48">
+            <title>enter</title>
+            <path d="M18 24h-15v-6h15v-6l9 9-9 9zM48 0v39l-18 9v-9h-18v-12h3v9h15v-27l12-6h-27v12h-3v-15z"></path>
+          </symbol>
+          <symbol id="icon-exit" viewBox="0 0 48 48">
+            <title>exit</title>
+            <path d="M36 30v-6h-15v-6h15v-6l9 9zM33 27v12h-15v9l-18-9v-39h33v15h-3v-12h-24l12 6v27h12v-9z"></path>
+          </symbol>
+        </svg>
+
+        <svg style="display: none;">
+          <symbol id="icon-circle-down" viewBox="0 0 48 48">
+            <title>circle-down</title>
+            <path d="M48 24c0-13.255-10.745-24-24-24s-24 10.745-24 24 10.745 24 24 24 24-10.745 24-24zM4.5 24c0-10.77 8.73-19.5 19.5-19.5s19.5 8.73 19.5 19.5-8.73 19.5-19.5 19.5-19.5-8.73-19.5-19.5z"></path>
+          <path d="M14.871 16.629l-4.243 4.243 13.371 13.371 13.371-13.371-4.243-4.243-9.129 9.129z"></path>
+          </symbol>
+        </svg>
+
+        <svg style="display: none;">
+          <symbol id="icon-circle-up" viewBox="0 0 48 48">
+          <title>circle-up</title>
+          <path d="M0 24c0 13.255 10.745 24 24 24s24-10.745 24-24-10.745-24-24-24-24 10.745-24 24zM43.5 24c0 10.77-8.73 19.5-19.5 19.5s-19.5-8.73-19.5-19.5 8.73-19.5 19.5-19.5 19.5 8.73 19.5 19.5z"></path>
+          <path d="M33.129 31.371l4.243-4.243-13.371-13.371-13.371 13.371 4.243 4.243 9.129-9.129z"></path>
+          </symbol>
+        </svg>
+
+        <svg style="display: none;">
+          <symbol id="icon-plus" viewBox="0 0 48 48">
+          <title>plus</title>
+          <path d="M46.5 18h-16.5v-16.5c0-0.828-0.672-1.5-1.5-1.5h-9c-0.828 0-1.5 0.672-1.5 1.5v16.5h-16.5c-0.828 0-1.5 0.672-1.5 1.5v9c0 0.828 0.672 1.5 1.5 1.5h16.5v16.5c0 0.828 0.672 1.5 1.5 1.5h9c0.828 0 1.5-0.672 1.5-1.5v-16.5h16.5c0.828 0 1.5-0.672 1.5-1.5v-9c0-0.828-0.672-1.5-1.5-1.5z"></path>
+          </symbol>
+        </svg>
+
+        <svg style="display: none;">
+          <symbol id="icon-minus" viewBox="0 0 48 48">
+          <title>minus</title>
+          <path d="M0 19.5v9c0 0.828 0.672 1.5 1.5 1.5h45c0.828 0 1.5-0.672 1.5-1.5v-9c0-0.828-0.672-1.5-1.5-1.5h-45c-0.828 0-1.5 0.672-1.5 1.5z"></path>
+          </symbol>
+        </svg>
+
+        <svg style="display: none;">
+          <symbol id="icon-cross" viewBox="0 0 48 48">
+          <title>cross</title>
+          <path d="M47.562 38.562c-0-0-0-0-0.001-0l-14.561-14.562 14.561-14.562c0-0 0-0 0.001-0 0.157-0.157 0.27-0.34 0.343-0.535 0.199-0.533 0.086-1.157-0.343-1.586l-6.879-6.879c-0.429-0.429-1.052-0.542-1.586-0.343-0.195 0.073-0.378 0.186-0.535 0.343 0 0-0 0-0 0l-14.562 14.562-14.562-14.562c-0-0-0-0-0-0-0.157-0.157-0.34-0.27-0.535-0.343-0.533-0.199-1.157-0.086-1.586 0.343l-6.879 6.879c-0.429 0.429-0.542 1.052-0.343 1.586 0.073 0.195 0.186 0.378 0.343 0.535 0 0 0 0 0 0l14.562 14.562-14.562 14.562c-0 0-0 0-0 0-0.157 0.157-0.27 0.34-0.343 0.535-0.199 0.533-0.086 1.157 0.343 1.586l6.879 6.879c0.429 0.429 1.052 0.542 1.586 0.343 0.195-0.073 0.378-0.186 0.535-0.343 0-0 0-0 0-0l14.562-14.562 14.562 14.562c0 0 0 0 0.001 0 0.157 0.157 0.34 0.27 0.535 0.343 0.533 0.199 1.157 0.086 1.586-0.343l6.879-6.879c0.429-0.429 0.542-1.053 0.343-1.586-0.073-0.195-0.186-0.378-0.343-0.535z"></path>
+          </symbol>
+        </svg>
+
+        <svg style="display: none;">
+          <symbol id="icon-upload" viewBox="0 0 32 32">
+          <title>upload</title>
+          <path d="M14 18h4v-8h6l-8-8-8 8h6zM20 13.5v3.085l9.158 3.415-13.158 4.907-13.158-4.907 9.158-3.415v-3.085l-12 4.5v8l16 6 16-6v-8z"></path>
+          </symbol>
+        </svg>
+
+        <div id="pal"></div>
+
+        <script>
+          $( function () { pal.initModule( $('#pal' ) ); });
+        </script>
+
+    </body>
+</html>
